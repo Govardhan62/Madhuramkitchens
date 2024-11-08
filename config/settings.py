@@ -93,15 +93,15 @@ DATABASES = {
       }
  }
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get(
-            'DATABASE_URL',  # This checks for DATABASE_URL in environment variables
-            'postgresql://pretty_django_rq0z_user:rCAfWSNfchPGTOfE0yYE5joBCrcRtsOi@dpg-crqnv8bv2p9s73e79v2g-a.oregon-postgres.render.com/madhuramkitchen'  # Local fallback (you can adjust with your local credentials)
-        ),
-        conn_max_age=600
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=os.environ.get(
+#             'DATABASE_URL',  # This checks for DATABASE_URL in environment variables
+#             'postgresql://pretty_django_rq0z_user:rCAfWSNfchPGTOfE0yYE5joBCrcRtsOi@dpg-crqnv8bv2p9s73e79v2g-a.oregon-postgres.render.com/madhuramkitchen'  # Local fallback (you can adjust with your local credentials)
+#         ),
+#         conn_max_age=600
+#     )
+# }
 
 
 
