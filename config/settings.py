@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
      'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'madhuramkitchen',
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'railway',
             'USER': 'postgres',
-            'PASSWORD': 'Manager',
-            'HOST': 'localhost',  
+            'PASSWORD': 'gyxKmXPMRpJMzduqqEvlryrliPNhlzUR',
+            'HOST': 'postgres.railway.internal',  
             'PORT': '5432', 
       }
  }
