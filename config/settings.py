@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'madhuramkitchen',
     'phonenumber_field',
     'ckeditor',
@@ -93,19 +92,7 @@ DATABASES = {
       }
  }
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default=os.environ.get(
-#             'DATABASE_URL',  # This checks for DATABASE_URL in environment variables
-#             'postgresql://pretty_django_rq0z_user:rCAfWSNfchPGTOfE0yYE5joBCrcRtsOi@dpg-crqnv8bv2p9s73e79v2g-a.oregon-postgres.render.com/madhuramkitchen'  # Local fallback (you can adjust with your local credentials)
-#         ),
-#         conn_max_age=600
-#     )
-# }
 
-
-
-# # 'my-db1-instance.cpwy0kssc35o.ap-south-1.rds.amazonaws.com'
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -141,11 +128,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "staticfiles_build" / "staticfiles"
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static')
 ]
-
-STATIC_ROOT = BASE_DIR / "staticfiles_build" / "staticfiles"
 
 # STATIC_ROOT = BASE_DIR / "staticfiles"
 
