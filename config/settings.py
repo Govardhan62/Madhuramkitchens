@@ -180,7 +180,7 @@ EMAIL_HOST = os.environ.get('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))
 EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'True') == 'True'
 EMAIL_HOST_USER = 'madhuramkitchens.com@gmail.com'
-EMAIL_HOST_PASSWORD = 'smvh wwyx ewry mvtj'
-ADMIN_EMAIL = 'saipaka61@gmail.com'
+EMAIL_HOST_PASSWORD = 'i@RWmWUhMsdp8pi'
+ADMIN_EMAIL = 'info@madhuramkitchens.in'
 
 CSRF_TRUSTED_ORIGINS=[]
